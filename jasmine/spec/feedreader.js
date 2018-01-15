@@ -34,7 +34,7 @@ $(function() {
         it('URLs are defined', function() {
             for (let feed of allFeeds) {
                 expect(feed.url).toBeDefined();
-                expect(typeof feed.url).toBe("string");
+                expect(typeof feed.url).toBe('string');
                 expect(feed.url).not.toBe('');
                 //https://www.regextester.com/20
                 expect(feed.url).toMatch(/^((http[s]?|ftp):\/)?\/?([^:\/\s]+)((\/\w+)*\/)([\w\-\.]+[^#?\s]+)(.*)?(#[\w\-]+)?$/);
@@ -48,7 +48,7 @@ $(function() {
         it('names are defined', function() {
             for (let feed of allFeeds) {
                 expect(feed.name).toBeDefined();
-                expect(typeof feed.name).toBe("string");
+                expect(typeof feed.name).toBe('string');
                 expect(feed.name).not.toBe('');
             }
         });
